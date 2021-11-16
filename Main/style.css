@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Yuji+Syuku&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+:root {
+  --black: #505050;
+  --pitch-black: #222222;
+  --white: #f6f5f5;
+  --orange: #dea919;
+  --red: #ed8975;
+  --blue: #304d63;
+  --green: #8fb9aa;
+}
+body {
+  background-color: var(--white);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*----------------navbar-------------------------*/
+
+
+nav {
+  width: 100%;
+  height: 75px;
+  box-shadow: 0.1rem 0.1rem 0.75rem rgba(0, 0, 0, 0.2);
+  line-height: 75px;
+  padding: 0 80px;
+  background-color: var(--white);
+}
+nav .logo {
+  float: left;
+}
+nav .logo p {
+  font-family: "Molle", cursive;
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+nav ul {
+  float: right;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+nav ul li a:hover {
+  transition:all 0.5s ease;
+  color: var(--red);
+}
+
+.checkbtn {
+  color: var(--black);
+  font-size: 2rem;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+
+/*-----------info------------------*/
+.info {
+  margin: 7rem 3rem;
+}
+.info h1 {
+  letter-spacing: 0.25rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--green);
+  padding-left: 3rem;
+  font-size: 5rem;
+  font-weight: 900;
+}
+.info p {
+  padding: 4rem;
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  text-align: center;
+}
+/*-------card------------*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.card {
+  width: 260px;
+  margin: 3rem;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.card:hover {
+  transform: scale(1.2);
+  transition: all 0.75s ease;
+  background-color: var(--white);
+  
+  
+}
+.card a {
+  padding: 1rem;
+  margin: 1.5rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card-image {
+  margin-bottom: 15px;
+  height: 180px;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+.card h2 {
+  text-align: center;
+}
+.card p {
+  text-align: center;
+  padding: 0.75rem;
+  color: var(--black);
+  font-size: 1rem;
+}
+.img-1 {
+  background-image: url("img/description-1.png");
+}
+.img-2 {
+  background-image: url("img/goals.png");
+}
+.img-3 {
+  background-image: url("img/rules.png");
+}
+.img-4{
+  background-image: url('img/management.png');
+}
+.img-5{
+  background-image: url('img/media.png');
+}
+.img-6{
+  background-image: url('img/english.png');
+}
+.img-7{
+  background-image: url('img/best.png');
+}
+
+/*--------------table--------------------*/
+
+.table-box {
+  margin: 50px auto;
+}
+
+.table-row {
+  display: table;
+  width: 80%;
+  margin: 10px auto;
+  background: transparent;
+  padding: 12px 0;
+  color: #555;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+}
+.table-head {
+  background: var(--green);
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
+}
+.table-head .table-cell {
+  border-right: none;
+}
+.table-cell {
+  display: table-cell;
+  width: 20%;
+  text-align: center;
+  padding: 4px 0;
+  border-right: 1px solid #d6d4d4;
+  vertical-align: middle;
+}
+.first-cell {
+  text-align: left;
+  padding-left: 10px;
+}
+.last-cell {
+  border-right: none;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+  .table-row {
+    font-size: 10px;
+  }
+}
+
+
+
+
+/*------------------contact----------------------*/
+.contact {
+  margin: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  background-color: var(--pitch-black);
+  justify-content: space-around;
+  align-items: center;
+}
+.contact h2 {
+  color: var(--white);
+  text-align: center;
+  text-decoration: overline;
+  font-size: 3rem;
+}
+.contact a {
+  text-transform: uppercase;
+  padding: 1rem 5rem;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--pitch-black);
+}
+.contact a:hover {
+  background-color: var(--blue);
+  transition: all 0.5s ease;
+}
+
+/*-------------footer---------------------*/
+.footer {
+  height: 40vh;
+  text-align: center;
+}
+.footer h3 {
+  font-size: 4rem;
+  color: var(--pitch-black);
+  margin-bottom: 3rem;
+}
+.footer p {
+  color: var(--black);
+}
+.social-media-footer {
+  display: block;
+  margin: 2rem;
+}
+.social-media-footer a {
+  padding: 0 1rem;
+  border-radius: 50%;
+  font-size: 3em;
+}
+.social-media-footer a i {
+  color: var(--pitch-black);
+}
+.social-media-footer a i:hover {
+  color: var(--red);
+  transition: all 0.5s ease;
+}
+.copyright {
+  color: var(--black);
+  font-size: 0.75rem;
+  padding: 4rem 0 1rem;
+}
+
+
+/*----------------media-queries---------------------------*/
+@media screen and (max-width: 990px) {
+  body , html{
+    font-size: 13px;
+  }
+  nav {
+    padding: 0px 50px;
+    position: fixed;
+    margin-block: -7rem;
+  }
+  .checkbtn {
+    display: block;
+  }
+  nav .logo p {
+    font-size: 30px;
+  }
+  nav ul {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    text-align: center;
+    transition: 0.4s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 60px 0;
+    line-height: 20px;
+    
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  nav ul li a{
+    color: var(--white);
+  }
+  .card:hover{
+    z-index:-1;
+  }
+  }
+
+
+
+
+
+
+
+/* nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  box-shadow: 0.1rem 0.1rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+.logo {
+  font-family: "Molle", cursive;
+  font-size: 2rem;
+  color: var(--orange);
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.menu ul li a {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.menu ul li a:hover{
+  transition:all 0.5s ease;
+  color: var(--red);
+} */

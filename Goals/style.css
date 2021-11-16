@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Yuji+Syuku&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --black: #505050;
+  --pitch-black :#222222;
+  --white: #f6f5f5;
+  --orange: #dea919;
+  --red: #ed8975;
+  --blue:#304d63;
+  --green : #8fb9aa;
+}
+body{
+  background-color: var(--white);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  box-shadow: 0.1rem 0.1rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+.logo {
+  font-family: "Molle", cursive;
+  font-size: 2rem;
+  color: var(--orange);
+}
+.menu ul {
+  display: flex;
+}
+.menu ul li {
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.menu ul li a {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.menu ul li a:hover{
+  transition:all 0.5s ease;
+  color: var(--red);
+}
+
+
+/*-------card------------*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  margin-top: 5rem;
+  
+  }
+  .card{
+    width: 300px;
+    margin: 3rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+  }
+  .card:hover{
+    transform: scale(1.2);
+    transition:all 0.75s ease;
+  }
+  .card a {
+    padding: 1rem;
+    margin: 1.5rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .card-image{
+    margin-bottom: 15px;
+    height: 180px;
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+  .card h2{
+    
+    text-align: center;
+  }
+  .card p {
+    text-align: center;
+    padding: 0.75rem;
+    color: var(--black);
+    font-size: 1rem;
+  
+  }
+  .img-1{
+    background-image: url('img/description-1.png');
+  }
+  .img-2{
+    background-image: url('img/goals.png');
+  }
+  .img-3{
+    background-image: url('img/rules.png');
+  }
+  /*--------------table--------------------*/
+
+.table-box {
+    margin: 50px auto;
+  }
+  
+  .table-row {
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    background: transparent;
+    padding: 12px 0;
+    color: #555;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 50, 0.3);
+  }
+  .table-head {
+    background: var(--green);
+    box-shadow: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .table-head .table-cell {
+    border-right: none;
+  }
+  .table-cell {
+    display: table-cell;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid #d6d4d4;
+    vertical-align: middle;
+  }
+  .table-cell p{
+    padding-inline: 3rem;
+  }
+  .first-cell {
+    width: 11vw;
+    text-align: left;
+    padding-left: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .table-row {
+      font-size: 10px;
+    }
+  }
+  
