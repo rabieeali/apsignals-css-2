@@ -201,25 +201,25 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 .img-1 {
-  background-image: url("/img/description-1.png");
+  background-image: url("../img/description-1.png");
 }
 .img-2 {
-  background-image: url("/img/goals.png");
+  background-image: url("../img/goals.png");
 }
 .img-3 {
-  background-image: url("/img/rules.png");
+  background-image: url("../img/rules.png");
 }
 .img-4{
-  background-image: url('/img/management.png');
+  background-image: url('../img/management.png');
 }
 .img-5{
-  background-image: url('/img/media.png');
+  background-image: url('../img/media.png');
 }
 .img-6{
-  background-image: url('/img/english.png');
+  background-image: url('../img/english.png');
 }
 .img-7{
-  background-image: url('/img/best.png');
+  background-image: url('../img/best.png');
 }
 
 /*--------------table--------------------*/
